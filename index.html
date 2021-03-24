@@ -19,7 +19,7 @@
      * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
      */
 
-    var quiztitle = "Quiz Title";
+    var quiztitle = "Prawne aspekty wolontariatu";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -28,40 +28,87 @@
     */
     var quiz = [
         {
+            "question"      :   "Jakie jest minimalny wiek wolontariusza?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
+            "choices"       :   [
+                                    `6 lat`,
+                                    `13 lat`,
+                                    `16 lat`,
+                                    `18 lat`,
+                                    `Nie jest to jednoznacznie określone`
+                                ],
+            "correct"       :   `Nie jest to jednoznacznie określone`,
+            "explanation"   :   "Nie jest to jednoznacznie określone, poniżej 18 roku życia wymagana jest zgoda rodziców",
+        },
+
+        {
+            "question"      :   "Jakie akty prawne szczegółowo regulują działania wolontariackie?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
+            "choices"       :   [
+                                    `Ustawa o działalności pożytku publicznego i o wolontariacie z dn.24kwietnia2003r.`,
+                                    `Prawo oświatowe z dn. 14 grudnia 2016r.`,
+                                    `Ustawa o zaopatrzeniu z tytułu wypadków lub chorób
+                                    zawodowych powstałych w szczególnych
+                                    okolicznościach z dnia 30 września 2002r.`,
+                                    `Wszystkie z powyższych`
+                                ],
+            "correct"       :   `Wszystkie z powyższych`,
+            "explanation"   :   "Każda z ustaw mówi o innych aspektach wolontariatu.",
+        },
+
+        {
             "question"      :   "W jakiej sytuacji porozumienie wolontariackie musi być sporządzone na piśmie?",
-            "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
             "choices"       :   [
-                                    "Sir Isaac Newton",
-                                    "Nicolaus Copernicus",
-                                    "Albert Einstein",
-                                    "Ralph Waldo Emmerson"
+                                    "Gdy świadczenie wolontariusza wykonywane jest przez okres dłuższy niż 30 dni.",
+                                    "Nigdy, zależy to od organizacji",
+                                    "Zawsze",
                                 ],
-            "correct"       :   "Albert Einstein",
-            "explanation"   :   "Albert Einstein drafted the special theory of relativity in 1905.",
+            "correct"       :   "Gdy świadczenie wolontariusza wykonywane jest przez okres dłuższy niż 30 dni.",
+            "explanation"   :   "Jeżeli świadczenie wolontariusza wykonywane jest przez okres dłuższy niż 30 dni, porozumienie powinno być sporządzone na piśmie.  Organizacje mogą chciać sporządzić porozumienie również w sytuacjach gdy działanie jest krótsze",
         },
         {
-            "question"      :   "Q2: Who is on the two dollar bill?",
-            "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
+            "question"      :   "Czy jako wolontariuszowi przysługuje ubezpieczenie wypadkowe?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
             "choices"       :   [
-                                    "Thomas Jefferson",
-                                    "Dwight D. Eisenhower",
-                                    "Benjamin Franklin",
-                                    "Abraham Lincoln"
+                                    "Tak",
+                                    "Nie"
                                 ],
-            "correct"       :   "Thomas Jefferson",
-            "explanation"   :   "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
+            "correct"       :   "Tak",
+            "explanation"   :   "Przy działaniu wolontariackim do 30 dni zapewna je organizacja, powyżej ZUS",
         },
         {
-            "question"      :   "Q3: What event began on April 12, 1861?",
-            "image"         :   "",
+            "question"      :   "Czy jako wolontariusz może liczyć na zwrot pieniędzy wydanych na działania w ramach wolontariatu (zeszyty, pomoce naukowe, ...)?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
             "choices"       :   [
-                                    "First manned flight",
-                                    "California became a state",
-                                    "American Civil War began",
-                                    "Declaration of Independence"
+                                    "Tak",
+                                    "Nie",
+                                    "Nie, chyba, że inaczej określono to w porozumieniu wolontariackim",
                                 ],
-            "correct"       :   "American Civil War began",
-            "explanation"   :   "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
+            "correct"       :   "Nie, chyba, że inaczej określono to w porozumieniu wolontariackim",
+            "explanation"   :   "Ustawa zobowiązuje korzystającego jedynie do pokrycia podróży służbowych, chociaż i tego wolontariusz może sie zrzec w porozumieniu",
+        },
+        {
+            "question"      :   "Czy jako wolontariuszowi przysługuje ubezpieczenie w NFZ?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
+            "choices"       :   [
+                                    "Tak",
+                                    "Nie"
+                                ],
+            "correct"       :   "Tak",
+            "explanation"   :   "Tak, jeżeli nie ma go pokrytego z racji zatrudnienia, bycia osobą bezrobotną, studentem, uczniem lub z innego tytułu",
+        },
+        {
+            "question"      :   "W której spośród wymienionych sytuacji możemy być wolontariuszem?",
+            "image"         :   "http://www.polites.org.pl/wp-content/uploads/2021/01/wlacznik.png",
+            "choices"       :   [
+                                    "Działając na rzecz związku zawodowego",
+                                    "Działając na rzecz parti politycznej",
+                                    "Wspierając fundacje bądz stwarzyszenie w prowadzeniu działalności gospodarczej",
+                                    "Żadne z powyższych"
+                                ],
+            "correct"       :   "Żadne z powyższych",
+            "explanation"   :   "Wolontariusz działa na rzecz innych",
         },
 
     ];
@@ -101,7 +148,7 @@
             submt = true;
             $('#explanation').empty();
             $('#question').text(quiz[currentquestion]['question']);
-            $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+            $('#pager').text('Pytanie ' + Number(currentquestion + 1) + ' z ' + quiz.length);
             if(quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != ""){
                 if($('#question-image').length == 0){
                     $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
@@ -123,18 +170,18 @@
         function processQuestion(choice){
             if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
                 $('.choice').eq(choice).css({'background-color':'#50D943'});
-                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong>Poprawna odpowiedz!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
                 score++;
             } else {
                 $('.choice').eq(choice).css({'background-color':'#D92623'});
-                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong>Błędna odpowiedź.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
             }
             currentquestion++;
-            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+            $('#submitbutton').html('Następne pytanie &raquo;').on('click', function(){
                 if(currentquestion == quiz.length){
                     endQuiz();
                 } else {
-                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                    $(this).text('Sprawdź odpowiedź').css({'color':'#222'}).off('click');
                     nextQuestion();
                 }
             })
@@ -173,7 +220,7 @@
             $('#question').empty();
             $('#choice-block').empty();
             $('#submitbutton').remove();
-            $('#question').text("You got " + score + " out of " + quiz.length + " correct.");
+            $('#question').text("Udzieliłeś " + score + " poprawnych odpowiedzi spośród " + quiz.length + " pytań.");
             $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '%').insertAfter('#question');
         }
 
@@ -191,7 +238,7 @@
             //add pager and questions
             if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
                 //add pager
-                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Pytanie 1 z ' + quiz.length).appendTo('#frame');
                 //add first question
                 $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
                 //add image if present
@@ -207,7 +254,7 @@
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Sprawdź odpowiedź').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
             
                 setupButtons();
             }
