@@ -1,0 +1,12 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wkhtmltopdf --margin-top 0 --margin-bottom 0 --margin-left 0 --margin-right 0 index.html resume.pdf"
+  },
+  "author": "Szymon Sobiepanek",
+  "license": "ISC"
+}
