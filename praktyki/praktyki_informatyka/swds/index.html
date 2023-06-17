@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<head>
+	<title>Strona w dobrym stylu</title>
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="css/bootstrap_dark.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/bootstrap_gray.min.css"> -->
+ 	<!-- <link rel="stylesheet" href="css/bootstrap_purple.min.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<style type="text/css">
+		h5 {
+			color: red;
+		}
+		.tekst-zielony {
+			color: green;
+		}
+	</style>
+	<main>
+		<div id="header" class="jumbotron">
+		<div>
+			<h1>Strona w dobrym stylu</h1>
+		</div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>NaCoBeZu</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Wiem w jaki sposób mogę osadzać style css.
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Wiem jak osadzać obrazky na strone html.
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Umiem formatować tekst w dokumencie html.
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Umiem stworzyć prostą stronę o moim hobby
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-success">
+							Ze zdjęciem z internetu
+						</li>
+						<li class="list-group-item list-group-item-success">
+							Z tekstem w ramce
+						</li>
+						<li class="list-group-item list-group-item-success">
+							Z odnośnikiem
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Co możemy zrobić w html poza stroną internetową</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					CV
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Zaproszenie
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Inne dokumenty
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Jak zobaczyć cudzą stronę internetową</h4>
+		</div>
+		<!-- <div class="col-md-10 offset-md-1 mt-2">
+			<h5>Przykładowy tekst z css osadzonym</h5>
+			<img src="images/osadzone.png">
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h5 style="color: yellow">Przykładowy teks z css wpisanym</h5>
+			<img src="images/wpisane.png">
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Zadanie</h4>
+			<p>Zmodyfikuj stronę o Kleofasie Słusznym tak by używać stylów osadzonych do znacznika h1, a nie stylów wpisanych</p>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Klasy</h4>
+			<p class="tekst-zielony"> p z klasą</p>
+			<p> p bez klasy</p>
+			<img src="images/klasa.png">
+			<img src="images/klasa_osadzony.png">
+
+		</div> -->
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Umieszczenie obrazków</h4>
+			<p>Aby umieścić obrazek należy podać jego źródło z internetu i użyć elementu img i atrybutu src</p>
+			<p> Zródło src należy podać w postaci linka np:
+				<a href="https://nauczanie.ssobiepanek.pl/logo.png" target="_blank">https://nauczanie.ssobiepanek.pl/logo.png</a>
+			</p>
+			<pre class="mt-2">
+				&lt;img src="https://nauczanie.ssobiepanek.pl/logo.png"&gt;
+			</pre>
+			<img src="https://nauczanie.ssobiepanek.pl/logo.png">
+			<h4 class="mt-2">Obrazek wyśrodkowany</h4>
+			<pre class="mt-2">
+				&lt;div style="text-align: center;"&gt;
+					&lt;img src="https://nauczanie.ssobiepanek.pl/logo.png"&gt;
+				&lt;/div&gt;
+			</pre>
+			<div style="text-align: center;">
+				<img src="https://nauczanie.ssobiepanek.pl/logo.png">
+			</div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Umieszczenie odnośników</h4>
+			<p>Aby umieścić odnośnik należy podać jego źródło z internetu i użyć znacznika a i atrybutu href.</p>
+			<p> Zródło src należy podać w postaci linka np:
+				<a href="https://nauczanie.ssobiepanek.pl/html" target="_blank">https://ssobiepanek.pl/html</a>
+			</p>
+			<pre class="mt-2">
+				&lt;a href="https://ssobiepanek.pl/html"&gt;
+			</pre>
+			<p>Jeżeli obrazek jest zapisany w tym samym folderze co plik .html w atrybucie src można podać nazwę pliku z grafiką.</p>
+			<pre>
+				&lt;img src="frisbee.jpg"&gt;
+			</pre>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Umieszczenie video</h4>
+			<p>Aby umieścić video należy podać jego źródło z internetu i użyć znacznika iframe i atrybutu src.</p>
+			<p>Aby uzyskać link do filmu z YouTube tak by można było go wstawić na własna stronę należy znaleźć id filmu.</p>
+			<img src="images/yt_id.png">
+			<p>i poprzedzić go <pre>https://www.youtube.com/embed/</pre>. Przykładowy znacznik</p>
+			<pre>
+				&lt;iframe class="video" src="https://www.youtube.com/embed/HhUays2ehyI"&gt;
+				&lt;/iframe&gt;
+			</pre>
+		</div>
+
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Formatowanie tekstu</h4>
+		</div>
+		<div class="col-md-10 offset-md-1 text-center mt-2">
+			<h6><a href="https://www.google.com/search?client=ubuntu&hs=scw&channel=fs&ei=oVSDXey3Eo3dgQbcyIPoDg&q=kolor+picer&oq=kolor+picer&gs_l=psy-ab.3..0i13l10.2177.2177..2446...0.2..0.112.112.0j1......0....1..gws-wiz.......0i71.Kz2PpEW-oc4&ved=0ahUKEwisjOmQ09zkAhWNbsAKHVzkAO0Q4dUDCAo&uact=5">Wybieranie kolorów</a></h6>
+			<h6><a href="https://designshack.net/articles/trends/best-website-color-schemes/">Gotowe palety kolorów</a></h6>
+			<img src="images/rgb-color.jpg">
+		</div>
+		<h4 class="mt-2">Więcej formatowań</h4>
+		<p style="border: solid 1px;
+			border-color:#b9936c;
+			background-color:#dac292;
+			color:#e6e2d3;
+			margin: 100px;">
+			Ważny tekst na stronie
+		</p>
+		<p style="border: solid 2px;
+			border-color:#3e4444;
+			background-color:#82b74b;
+			color:#405d27;
+			margin: 10px;">
+			Ważny tekst na stronie
+		</p>
+		<p style="border: solid 5px;
+			border-color:#c83349;
+			background-color:#e06377;
+			color:#eeac99;
+			margin-top: 10px;
+			margin-left: 200px;
+			margin-right: 200px;
+		">
+			Ważny tekst na stronie
+		</p>
+
+		<div class="col-md-10 offset-md-1 mt-2">
+			<pre>
+				&lt;p style="border: solid 1px;
+					border-color:#b9936c;
+					background-color:#dac292;
+					color:#e6e2d3;
+					margin: 100px;"&gt;
+					Ważny tekst na stronie
+				&lt;/p&gt;
+				&lt;p style="border: solid 2px;
+					border-color:#3e4444;
+					background-color:#82b74b;
+					color:#405d27;
+					margin: 10px;"&gt;
+					Ważny tekst na stronie
+				&lt;/p&gt;
+				&lt;p style="border: solid 5px;
+					border-color:#c83349;
+					background-color:#e06377;
+					color:#eeac99;
+					margin-top: 10px;
+					margin-left: 200px;
+					margin-right: 200px;
+				"&gt;
+					Ważny tekst na stronie
+				&lt;/p&gt;
+			</pre>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<a href="strona.txt" download="strona.txt">
+				Otwórz html strony
+			</a>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<pre style="border-style: solid;">
+			&lt;DOCTYPE html&gt;
+			&lt;head&gt;
+				&lt;meta charset="utf-8"&gt;
+				&lt;meta title="Ultimate frisbee"&gt;
+			&lt;/head&gt;
+			&lt;style type="text/css"&gt;
+				body {
+					font-size: 10pt;
+					color: #040f3d;
+					background-color: #ebe1e6;
+					padding: 20pt;
+					font: 14pt Lato, Verdana, Geneva, Arial, Helvetica, sans-serif;
+				}
+
+				h1 {
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				img {
+					padding: 3pt;
+					border-radius: 15px;
+				}
+
+				.center {
+					text-align: center;
+				}
+
+				.important {
+					background-color: #4bffa5;
+					font-style: italic;
+					margin: 30pt;
+					padding: 10px;
+					border-radius: 15px;
+					border-style: solid;
+				}
+
+				.video {
+					margin: 30px;
+					width: 420px;
+					height: 315px;
+				}
+			&lt;/style&gt;
+			&lt;body&gt;
+				&lt;h1 class="center important"&gt;Ultimate frisbee&lt;/h1&gt;
+				&lt;div class="center"&gt;
+					&lt;img src="frisbee.jpg"&gt;
+				&lt;/div&gt;
+				&lt;p class="important"&gt;
+					&lt;b&gt;Ultimate&lt;/b&gt; – gra zespołowa z użyciem latającego dysku (frisbee) łącząca w sobie elementy koszykówki, piłki nożnej, piłki ręcznej i rugby. Jest bardzo
+					dynamiczna i widowiskowa, od graczy wymaga wytrzymałości, szybkości i zręczności, lecz jednocześnie proste zasady czynią ją bardzo łatwą do opanowania dla
+					początkujących. Podstawowymi zasadami ultimate są brak fizycznego kontaktu pomiędzy graczami oraz fair play.
+				&lt;/p&gt;
+				&lt;h2&gt;Zasady rozgrywki&lt;/h2&gt;
+
+				&lt;p&gt;
+					W rozgrywce uczestniczą dwie siedmioosobowe drużyny. Boisko do gry ma wymiary 100 × 37 metrów, lecz wymiary mogą ulec nieznacznej zmianie, w zależności od warunków i
+					 możliwości organizatorów meczu. Na obu końcach boiska znajdują się strefy punktowe długości 18 m (zwane "zonami"). Drużyna atakująca zdobywa punkty łapiąc frisbee w
+					  strefie punktowej (zonie) przeciwnika, zaś drużyna broniąca stara się jej przeszkodzić i przejąć frisbee. Zawodnicy nie mogą biegać z frisbee, po złapaniu dysku
+					  należy się zatrzymać i nie odrywając jednej nogi od podłoża, rzucić go do następnego zawodnika. Jeżeli dysk upadnie na ziemię, zostanie złapany poza boiskiem,
+					  zostanie przechwycony lub strącony na ziemię przez zawodnika drużyny broniącej, inicjatywę przejmuje drużyna która wcześniej broniła, a drużyna atakująca przechodzi
+					  do obrony. W przypadku rozgrywek na piasku lub hali wielkość boiska ulega zmniejszeniu. Najczęściej w takich warunkach na boisku gra pięciu zawodników.
+				&lt;/p&gt;
+				&lt;p class="important"&gt;
+					W ultimate frisbee nie uczestniczą sędziowie. Wszystkie kwestie sporne rozwiązują sami zawodnicy w myśl zasady fair play. W wypadku różnicy zdań sporne zagranie jest
+					 powtarzane.
+				&lt;/p&gt;
+				&lt;div class="center" &gt;
+					&lt;a href="https://pl.wikipedia.org/wiki/Ultimate"&gt;Źródło: wikipedia&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="center"&gt;
+					&lt;iframe class="video" src="https://www.youtube.com/embed/HhUays2ehyI"&gt;
+					&lt;/iframe&gt;
+				&lt;/div&gt;
+			&lt;/body&gt;
+			</pre>
+		</div>
+	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/fraktal.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Ultimate frisbee</title>
+</head>
+<style type="text/css">
+  body {
+    font-size: 10pt;
+    color: #040f3d;
+    background-color: #ebe1e6;
+    padding: 20pt;
+    font: 14pt Lato, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  img {
+    padding: 3pt;
+    border-radius: 15px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .important {
+    background-color: #4bffa5;
+    font-style: italic;
+    margin: 30pt;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+  }
+
+  .video {
+    margin: 30px;
+    width: 420px;
+    height: 315px;
+  }
+</style>
+<body>
+  <h1 class="center important">Ultimate frisbee</h1>
+  <div class="center">
+    <img src="frisbee.jpg">
+  </div>
+  <p class="important">
+    <b>Ultimate</b> – gra zespołowa z użyciem latającego dysku (frisbee) łącząca w sobie elementy koszykówki, piłki nożnej, piłki ręcznej i rugby. Jest bardzo dynamiczna i widowiskowa, od graczy wymaga wytrzymałości, szybkości i zręczności, lecz jednocześnie proste zasady czynią ją bardzo łatwą do opanowania dla początkujących. Podstawowymi zasadami ultimate są brak fizycznego kontaktu pomiędzy graczami oraz fair play.
+  </p>
+  <h2>Zasady rozgrywki</h2>
+
+  <p>
+    W rozgrywce uczestniczą dwie siedmioosobowe drużyny. Boisko do gry ma wymiary 100 × 37 metrów, lecz wymiary mogą ulec nieznacznej zmianie, w zależności od warunków i możliwości organizatorów meczu. Na obu końcach boiska znajdują się strefy punktowe długości 18 m (zwane "zonami"). Drużyna atakująca zdobywa punkty łapiąc frisbee w strefie punktowej (zonie) przeciwnika, zaś drużyna broniąca stara się jej przeszkodzić i przejąć frisbee. Zawodnicy nie mogą biegać z frisbee, po złapaniu dysku należy się zatrzymać i nie odrywając jednej nogi od podłoża, rzucić go do następnego zawodnika. Jeżeli dysk upadnie na ziemię, zostanie złapany poza boiskiem, zostanie przechwycony lub strącony na ziemię przez zawodnika drużyny broniącej, inicjatywę przejmuje drużyna która wcześniej broniła, a drużyna atakująca przechodzi do obrony. W przypadku rozgrywek na piasku lub hali wielkość boiska ulega zmniejszeniu. Najczęściej w takich warunkach na boisku gra pięciu zawodników.
+  </p>
+  <p class="important">
+    W ultimate frisbee nie uczestniczą sędziowie. Wszystkie kwestie sporne rozwiązują sami zawodnicy w myśl zasady fair play. W wypadku różnicy zdań sporne zagranie jest powtarzane.
+  </p>
+  <div class="center" >
+    <a href="https://pl.wikipedia.org/wiki/Ultimate">Źródło: wikipedia</a>
+  </div>
+  <div class="center">
+    <iframe class="video" src="https://www.youtube.com/embed/HhUays2ehyI">
+    </iframe>
+  </div>
+</body>

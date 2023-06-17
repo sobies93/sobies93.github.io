@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+	<title>Html podstawy</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<style type="text/css">
+		h5 {
+			color: red;
+		}
+		.tekst-zielony {
+			color: green;
+		}
+	</style>
+	<main>
+		<div id="header" class="jumbotron">
+		  <div>
+			<h1>Html podstawy</h1>
+		  </div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>NaCoBeZu</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Znam podstawowe znaczniki html.
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Znam podstawowe sposoby formatowanie w dokumencie html
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Co możemy zrobić w html poza stroną internetową</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					CV
+					<a href="https://www.flynerd.pl/2018/07/stworz-cv-w-html-i-css-krok-po-kroku.html">Tutorial</a>
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Zaproszenie
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Inne dokumenty
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Jak zobaczyć cudzą stronę internetową?</h4>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Jak stworzyć stronę internetową?</h4>
+			<p>
+				Przekopiuj poniższy tekst do notatnika (lub Notepad2), a następnie zapisz jako ja.html
+			</p>
+			<pre>                                                       
+				&lt;body style=""&gt;                          
+					&lt;span style=""&gt;Cały ja&lt;/span&gt;
+					&lt;span&gt;
+					&lt;span&gt;imię:&lt;/span&gt; &lt;span&gt;Kleofas&lt;/span&gt;
+					&lt;br&gt;
+					&lt;span&gt;nazwisko:&lt;/span&gt; &lt;span&gt;Słuszny&lt;/span&gt;
+					&lt;br&gt;
+					&lt;span&gt;miejsce zamieszkania:&lt;/span&gt; &lt;span&gt;Błądzigłowy&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span&gt;
+					Urodziłem się początku XXI wieku. Wszyscy mówią, że to wiek szalony.
+					Uważnie obserwuję otaczający mnie świat i coraz częściej dochodzę do
+					wniosku, że trudno zaprzeczyć tej opinii.
+					&lt;/span&gt;
+					&lt;span&gt;
+					Jaki będzie ten świat za 50 lat? Niestety, tego nie wiem. Chciałbym jednak
+					czynnie uczestniczyć w jego kształtowaniu.
+					&lt;/span&gt;
+					&lt;span&gt;
+					Myślę, że najważniejszą informacją o mnie będzie ta, że ponad wszystko cenię
+					sobie spokój.
+					&lt;/span&gt;
+					&lt;span&gt;
+					(jeszcze o mnie usłyszycie) wasz Kleo
+					&lt;/span&gt;
+				&lt;/body&gt;                                          
+			</pre>
+			<p>
+				Otwórz go za pomocą przeglądarki internetowej. Powiniene otrzymać <a href="kleo_span.html">taki</a> dokument.
+			</p>
+			<p>
+				Twoim zadaniem będzie przekształcenie dokumentu, tak by wyglądał <a href="kleo.html">tak</a> dokument
+			</p>
+			<p>
+				Aby to wykonać pozmieniaj znaczniki html na
+			</p>
+			<ul>
+				<li> h1 by oznaczyć <h1>tytuł strony</h1></li>
+				<li> p by oznaczyć akapit tesktu
+					<p>akapit 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<p>akapit 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</li>
+				<li> b by oznaczyć <b>tekst wytłuszczonym drukiem</b></li>
+				<li> h1 by oznaczyć <i>tekst kursywą</i></li>
+			</ul>
+			Użyj poniższych atrybutów style w odpowiednich miejscach, aby dodać formatowanie:
+			<ul>
+				<li>kolor tekstu
+					<pre>
+						color: red;
+					</pre>
+				</li>
+				<li>"wycentrować" tytuł
+					<pre>
+						text-align: center;
+					</pre>
+				</li>
+				<li>dodać margines do całej strony
+					<pre>
+						margin: 80px;
+					</pre>
+				</li>
+				<li>ustawić rodzaj czcionki dla całej strony
+					<pre>
+						font-family: Arial;
+						font-size: 11pt;
+					</pre>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/fraktal.js"></script>
+</body>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<title>Fraktale</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div id="header" class="jumbotron">
+		  <div>
+			<h1>Fraktale</h1>
+		  </div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>NaCoBeZu</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Rekurencja
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Fraktal
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Narzędzia w Scratchu.
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-success">
+							Własne bloki
+						</li>
+						<li class="list-group-item list-group-item-success">
+							Parametry
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 offset-md-1">
+			<h4>Powtórka ze scratcha</h4>
+			<p>W ramach przypomnienia jak działa Scatch, wykonamy proste zadanie. Zmodyfikuj <a target="_blank" href="https://scratch.mit.edu/projects/308967507/">program</a> tak by w wyniku naciśięcia flagi otrzymać następujący efekt. Aby spirala mogła zostać powtórzona wielokrotnie, duszek musi wrócić na miejsce z którego rozpoczął działanie. Uzupełnij brakujące bloki w pustym miejscu.</p>
+			<div class="text-center">
+				<img src="images/petla_zadanie.png">
+			</div>
+		</div>
+		<div class="col-md-10 offset-md-1 text-center mt-2">
+			<button class="btn btn-danger show " data-show=".sciaga1">
+				Pokaż podpowiedz
+			</button>
+			<div class="sciaga1 hideInitial mt-2">
+				<div>
+					<img src="images/petla_puste.png">
+				</div>
+				<div class="mt-2">
+					<p>Aby duszek cofnął się o pewną ilość kroków, wartość podana jako argument musi być ujemna. Zastąp moją zmienną wartością o jaką cofnąć ma się duszek.</p>
+					<img src="images/podpowiedz.png">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Fraktale</h4>
+			<div>
+				<p class="alert alert-warning"><strong>Rekurencja</strong> odwoływanie się np. funkcji lub definicji do samej siebie. Rekurencyjna jest np. definicja potęgi</p>
+				<p class="alert alert-warning">
+					<strong>
+						Fraktal
+					</strong>
+					to obiekt którego części są podobne do całośc
+				</p>
+				<p>Fraktalem, który dzisiaj stworzymy będzie drzewo binarne.</p>
+				<div class="text-center">
+					<img src="images/p4-0.png">
+					<img src="images/p9-0.png">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-10 offset-md-1 text-center mt-2">
+
+			<button class="btn btn-danger show " data-show=".sciaga2">
+				Pokaż podpowiedz
+			</button>
+			<div class="sciaga2 hideInitial mt-2">
+				<div>
+					<h4><a target="_blank" href="https://scratch.mit.edu/projects/308963335/">Plik do uzupełnienia</a></h4>
+				</div>
+				<img src="images/drzewo.png">
+			</div>
+		</div>
+		<div class="col-md-10 offset-md-1 mt-2 mb-5">
+			Jeżeli uda Ci się skończyć powyższe zadanie, spróbuj zmodyfikować program, tak by drzewo było mniej regularne - wprowadź element losowy w długości gałęzi. Jeżeli uda Ci się i to, spróbuj dodać liście na końcach drzewa.
+			<div class="text-center mt-2">
+				<button class="btn btn-danger show " data-show=".sciaga3">
+					Pokaż podpowiedz
+				</button>
+			</div>
+			<div class="sciaga3 hideInitial mt-2">
+				<div>
+					Podmień kostium duszka na narysowany liść. Następnie użyj bloku STEMPLUJ
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/fraktal.js"></script>
+</body>
