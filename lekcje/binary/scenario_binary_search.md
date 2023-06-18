@@ -180,6 +180,3 @@ W tym momencie warty podkreślenie jest fakt, że chociaż nam łatwo wskazać j
 
 Jeżeli mamy pewność, że uczniowie rozumieją przebieg algorytmu, zlecamy im powtórzenie  pierwszego ćwiczenia ze strony internetowej.
 
-Jako zadanie domowe, do zastanowienia, możemy zadać zagadkę: „Teraz my, podobnie jak komputer, postaramy się rozwiązać problem, wykonując jak najmniej operacji. Zabawimy się w złotników. Mamy 4 łańcuszki o 3 ogniwach. Chcemy je połączyć w jedną bransoletkę, składającą się z 12 ogniw. W jaki sposób możemy ją wykonać, tak by rozciąć jak najmniej ogniw?”. Warto wykonać ją na rzeczywistych łańcucha z papieru, lub też posługując się obrazkiem.
-Uczniowie mają czas na rozwiązanie zagadki aż do kolejnej lekcji. Jeżeli żaden z uczniów nie wpadnie na pomysł jak wykonać bransoletkę rozcinając mniej niż 4 ogniwa, podajemy uczniom poprawną odpowiedz – rozcięcie 3 ogniów. Sposób w jaki to dokonać prezentujemy na kolejnej lekcji, tak by uczniowie mogli wymyślić metodę w domu, znając odpowiedź.
-
