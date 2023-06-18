@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>Wyszukiwanie binarne</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="jumbotron">
+	  <div class="container">
+		<h1>Jak komputer wyszukuje dane?</h1>
+		<p>
+			<a class="btn btn-primary btn-lg showByUser" role="button">
+				Sprawdźmy »
+			</a>
+		</p>
+	  </div>
+	</div>
+	<main class="container">
+		<section class="byUser" hidden>
+			<h5>
+				Użytkownik nie lubi czekać, więc dane muszą być wyszukiwanie szybko. Dziś nauczymy się, jak komputer szuka w zbiorach, które są posortowane!
+			</h5>
+			<p>
+				Na początek zobaczmy jak Ty poradzisz sobie ze znalezieniem ucznia o nazwisku Jankowski!
+				Tabela niżej to wyciąg z dziennika, w którym uczniowie posortowani są alfabetycznie.
+				Sprawdz pod jakim numer kryje się uczeń Jankowski.
+				Postaraj się zrobić to w jak najmniejszej liczbie kroków.
+			</p>
+			<button class="col-md-4 offset-md-4 btn btn-success btn-lg startSearch" role="button">
+				Zaczynamy
+			</button>
+			<h3 class="text-center counter" hidden>
+				0
+			</h3>
+			<table class="table table-bordered mt-2">
+				<thead class="table-info">
+					<tr>
+						<td class="col-md-4">
+							Numer
+						</td>
+						<td class="col-md-8">
+							Liczba
+						</td>
+					<tr>
+				</thead>
+				<tbody class="numbersList">
+				</tbody>
+			</table>
+		</section>
+		<section class="sumUp row mt-2 mb-2" hidden>
+			<button class="col-md-3 offset-md-2 btn btn-primary btn-lg againByUser">
+				Jeszcze raz
+			</button>
+			<button class="col-md-3 offset-md-2 btn btn-success btn-lg showByComputer">
+				Zobacz jak robi to komputer
+			</button>
+		</section>
+		<section class="byComputer row mt-2" hidden>
+
+			<h3 class="col-md-12 text-center">A teraz zobaczmy jak z zadaniem poradzi sobie komputer:</h3>
+			<div class="col-md-6">
+				<table class="table table-bordered">
+					<thead class="table-info">
+						<tr>
+							<td class="col-md-4">
+								Numer
+							</td>
+							<td class="col-md-8">
+								Liczba
+							</td>
+						<tr>
+					</thead>
+					<tbody class="numbersList">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<p>
+					Obok znajdują się posortowana lista uczniów innej klasy. Zobaczymy jak komputer znajdzie Jankowskiego w tej klasie. Wciśnij start!
+				</p>
+				<a class="mt-1 col-md-6 offset-md-3 btn btn-success btn-lg startSearch">
+					Start
+				</a>
+				<h3 class="text-center counter" hidden>
+					0
+				</h3>
+				<a class="mt-1 col-md-6 offset-md-3 btn btn-primary btn-lg searchAgainByComputer" hidden>
+					Jeszcze raz
+				</a>
+			</div>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js" integrity="sha256-jCRPoAgIIooCTnLmaSyKMPrFgFh6/T0e8c3i+KkZZ6U=" crossorigin="anonymous"></script>
+	<script src="binary.js"></script>
+</body>
