@@ -1,0 +1,15 @@
+.game-card {
+	text-align: center;
+	height: 100px;
+	width: 10%;
+	vertical-align: top;
+}
+.score {
+	width: 50%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.active {
+	color: red;
+}
