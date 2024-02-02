@@ -1,10 +1,19 @@
 export default {
-// 	hug: {
-// 		src: 
-// 	}
-// }
+	verbs: {
+		// hug:'hug.png', 
+		fly:'fly.png',
+		// dance:'dance.png',
+		// jump:'jump.png',
+		play:'play.png',
+		run:'run.png',
+		sing:'sing.png',
+		// walk:'walk.png',
+		write:'write.png',
+		play:'play.png',
+	}
+}
 
-// const old = {
+const old = {
 	old_reading: {
 		tuna: 'tuńczyk',
 		recommend: 'polecać',

@@ -1,11 +1,18 @@
 import _ from 'lodash';
 import $ from "jquery";
-// import dictionary from "./dictionary"
-const dictionary = {
+import dictionary from "./dictionary"
+
+const debug = false;
+
+const debug_dictionary = {
     debug: {
 		one: 'jeden',
 		two: 'dwa',
 	},
+}
+
+if(debug) {
+    dictionary = debug_dictionary;
 }
 
 $(function() {
@@ -36,6 +43,9 @@ const select = () => {
 		$('#select').hide();
 		start_game($(this).attr('data-type'));
 	});
+    if(dictionary.length === 1) {
+        start_game(_.keys(dictionary)[0]);
+    }
 }
 
 /**
@@ -84,6 +94,7 @@ const result = single_player
 	$(`#player1`).removeClass('active');
 
 	$(`#player${active_player}`).addClass('active');
+    // $(`#player0`).html(`<img src=>`);
 }
 
 
@@ -168,9 +179,12 @@ var generateBoard = function(doubled_words) {
 				blanks = [...Array(diff / 2)].map(x => blank).join('');
 			}
 			let row_html = _.reduce(row, (deep_accumulator, card) => {
+                const content = card.value.includes('.')
+                    ? `<img src="./images/${card.value}" height="150"/>`
+                    : card.value;
 				deep_accumulator += `<td class='game-card' data-card_key="${card.key}" id="${index}"'>
 					<span>${index}</span><br />
-					<span class="cardSpan">${card.value}</span>
+					<span class="cardSpan">${content}</span>
 				</td>`
 				index = index + 1;
 				return deep_accumulator;
@@ -184,9 +198,12 @@ var generateBoard = function(doubled_words) {
 var generateList = function(words_pairs) {
 	$('.wordList').html(
 		_.reduce(words_pairs, (accumulator, lang, translation) => {
+                const content = lang.includes('.')
+                ? `<img src="./images/${lang}" height="150"/>`
+                : lang;
 				accumulator += `<tr>
 					<td>
-						${lang}
+						${content}
 					</td>
 					<td>
 						${translation}

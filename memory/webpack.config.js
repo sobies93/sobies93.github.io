@@ -1,6 +1,5 @@
 const path = require('path');
-
-const public_dist = path.resolve(__dirname, '../dist/public');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devServer: {
@@ -9,7 +8,12 @@ module.exports = {
       port: 3000,
       historyApiFallback: true,
     },
-    // output: {
-    //     path: public_dist,
-    // },
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'public' }
+            ]
+        })
+    ]
+   
 };
