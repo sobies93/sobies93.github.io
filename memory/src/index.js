@@ -43,9 +43,6 @@ const select = () => {
 		$('#select').hide();
 		start_game($(this).attr('data-type'));
 	});
-    if(dictionary.length === 1) {
-        start_game(_.keys(dictionary)[0]);
-    }
 }
 
 /**

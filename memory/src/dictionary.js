@@ -10,6 +10,18 @@ export default {
 		// walk:'walk.png',
 		write:'write.png',
 		play:'play.png',
+	},
+	verbs2: {
+		hug:'hug.png', 
+		fly:'fly.png',
+		dance:'dance.png',
+		jump:'jump.png',
+		play:'play.png',
+		run:'run.png',
+		sing:'sing.png',
+		walk:'walk.png',
+		write:'write.png',
+		play:'play.png',
 	}
 }
 
