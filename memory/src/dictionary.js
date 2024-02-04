@@ -22,6 +22,19 @@ export default {
 		walk:'walk.png',
 		write:'write.png',
 		play:'play.png',
+	},
+	animals: {
+		cat:"cat.png",
+		cow:"cow.png",
+		elephant:"elephant.png",
+		lion:"lion.png",
+		monkey: "monkey.png",
+		mouse:"mouse.png",
+		spider:"spider.png",
+	},
+	animals1: {
+		owl:"owl.png",
+		whale:"whale.png",
 	}
 }
 
