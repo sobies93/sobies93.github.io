@@ -35,7 +35,19 @@ export default {
 	animals1: {
 		owl:"owl.png",
 		whale:"whale.png",
-	}
+	},
+	unit3: {
+		'traffic jam': 'korek',
+		'rush hours': 'godziny szczytu',
+		'public transportation': 'transport publiczny',
+		'barefoot': 'na boso',
+		'fasten seatbelt': 'zapiąć pas',
+		'cable car': 'kolejka linowa',
+		'dirt track': 'droga gruntowa',
+		'miss a bus': 'spóźnić się na autobus',
+		'get a lift': 'mieć podwózkę',
+	},
+
 }
 
 const old = {
