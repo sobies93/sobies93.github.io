@@ -47,6 +47,21 @@ export default {
 		'miss a bus': 'spóźnić się na autobus',
 		'get a lift': 'mieć podwózkę',
 	},
+	'unit3-wypowiedz': {
+		"It takes about thirty minutes to walk to the shool": "Dojście do szkoł zajmuje mi 30 minut",
+		"Sometimes I use shortcuts": 'czasem używam skrótów',
+		"I like my way to school, because it's short": 'Lubie drogę do szkoły bo jest krótka',
+		"My friend works in school in Nepal": "Moj przyjaciel pracuje w szkole w nepalu",
+		"In this school students must walk a hour ever day to reach the school": "w tej szkole uczniowie muszą iść godzinę, żęby dojść do szkoł",
+		"Sometimes they are afraid, becouse one time they saw a tiger": "czasem się boją, bo pewnego razu widziały tygrysa",
+		"My favourite mean of transportation is a bus": "moim ulubiony środkiem transportu jest autobus",
+		"I like buses, because they go everywhere I need to go":  "Lubie autobusy, bo dojeżdzają tam gdzie potrzebuje",
+		"When I travel, it is important for me to have everything I need": "kiedy podróżuje, ważne jest dla mnie, żeby mieć wszystko czego potrzebuje",
+		"I was on a backpacking trip. I liked it.": "Bylem na wycieczce z plecakiem. Podobała mi się",
+		"I think traveling can broaden the mind": "Myślę, że podróżowanie może poszerzać horyzonty",
+		"Traveling is getting to know new places": "Podróżowanie to poznawanie nowych miejsc",
+		"When I travel, I can meet new people and see new animals": "Jak pordóżuje to mogę poznać nowych ludzi i zobaczyć nowe zwierzęta",
+	}	
 
 }
 
