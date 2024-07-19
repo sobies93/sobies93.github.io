@@ -1,0 +1,12 @@
+name: tests workflow
+
+on: pull_request
+
+jobs:
+  build:
+    name: debug
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo HelloWorld

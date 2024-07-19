@@ -1,0 +1,18 @@
+name: debug on comment
+on:
+  issue_comment:
+    types: [created] # Trigger on new comments
+
+jobs:
+  validate-product-parser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract client name from comment
+        id: extract-client-name
+        run: |
+          # Extract client name from comment body
+          CLIENT_NAME=$(echo "${{ github.event.comment.body }}" || grep -oE 'run parser on client (.*?)' | sed -e 's/run parser on client\(.*\)/\1/')
+          echo "::set-output name=client_name::${CLIENT_NAME}"
+
+      - name: Run insert-client script
+        run: echo ${{ steps.extract-client-name.outputs.client_name }}
