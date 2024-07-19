@@ -15,4 +15,4 @@ jobs:
           echo "::set-output name=client_name::${CLIENT_NAME}"
 
       - name: Run insert-client script
-        run: node ./debug-script.js ${{ steps.extract-client-name.outputs.client_name }}
+        run: npm run debug ${{ steps.extract-client-name.outputs.client_name }}
