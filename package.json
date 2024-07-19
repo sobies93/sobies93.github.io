@@ -1,7 +1,4 @@
 {
-  "name": "sobies93.github.io",
-  "version": "1.0.0",
-  "main": "debug-script.js",
   "scripts": {
     "debug": "node ./debug-script.js"
   },
