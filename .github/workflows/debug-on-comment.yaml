@@ -11,7 +11,7 @@ jobs:
         id: extract-client-name
         run: |
           # Extract client name from comment body
-          CLIENT_NAME=$(echo "${{ github.event.comment.body }}" || grep -oE 'run parser on client (.*?)' | sed -e 's/run parser on client\(.*\)/\1/')
+          CLIENT_NAME=$(echo "${{ github.event.comment.body }}" | grep -oP '(?<=run parser on ).*')
           echo "::set-output name=client_name::${CLIENT_NAME}"
 
       - name: Run insert-client script
