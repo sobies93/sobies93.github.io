@@ -8,14 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install npm dependencies
+        uses: ./
         run: npm install
 
       - name: Extract client name from comment
         id: extract-client-name
+        uses: ./
         run: |
           # Extract client name from comment body
           CLIENT_NAME=$(echo "${{ github.event.comment.body }}" | grep -oP '(?<=run parser on client).*')
           echo "::set-output name=client_name::${CLIENT_NAME}"
 
       - name: Run insert-client script
+        uses: ./
         run: npm run debug ${{ steps.extract-client-name.outputs.client_name }}
