@@ -4,5 +4,19 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "name": "sobies93.github.io",
+  "version": "1.0.0",
+  "main": "debug-script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sobies93/sobies93.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sobies93/sobies93.github.io/issues"
+  },
+  "homepage": "https://github.com/sobies93/sobies93.github.io#readme",
+  "description": "",
+  "dependencies": {
+    "winston": "^3.13.1"
+  }
 }
