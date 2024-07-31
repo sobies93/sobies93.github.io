@@ -7,6 +7,9 @@ jobs:
   validate-product-parser:
     runs-on: ubuntu-latest
     steps:
+      - name: Install npm dependencies
+        run: npm install
+
       - name: Extract client name from comment
         id: extract-client-name
         run: |
