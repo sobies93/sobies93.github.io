@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&C Demo - Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-result {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-result a {
+            color: #1a0dab;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .status {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: green;
+        }
+        .triggered {
+            color: green;
+        }
+        .not-triggered {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>P&C Demo - Search Results</h1>
+
+    <div class="search-result">
+        <a href="https://www.peek-cloppenburg.de/de/p/wellensteyn-steppmantel-mit-kapuze-modell-cordoba-black-1188768?utm_recova_trial=true">
+            https://www.peek-cloppenburg.de/de/p/wellensteyn-steppmantel-mit-kapuze-modell-cordoba-black-1188768?utm_recova_trial=true <br>
+            Wellensteyn Steppmantel mit Kapuze - Modell Cordoba (Black)
+        </a>
+        <span class="status triggered">triggering</span>
+    </div>
+
+    <div class="search-result">
+        <a href="https://www.peek-cloppenburg.de/de/p/wellensteyn-steppmantel-mit-kapuze-modell-cordoba-black-1188768">
+            https://www.peek-cloppenburg.de/de/p/wellensteyn-steppmantel-mit-kapuze-modell-cordoba-black-1188768
+            Wellensteyn Steppmantel mit Kapuze - Modell Cordoba (Black)
+        </a>
+        <span class="status not-triggered">triggering disabled</span>
+    </div>
+
+    <div class="search-result">
+        <a href="https://www.peek-cloppenburg.de/?utm_recova_trial=true">
+            https://www.peek-cloppenburg.de?utm_recova_trial=true
+            Peek & Cloppenburg - Home Page
+        </a>
+        <span class="status not-triggered">triggering disabled</span>
+    </div>
+
+</body>
+</html>
