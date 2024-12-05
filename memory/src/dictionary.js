@@ -571,5 +571,20 @@ take:'took',
 tell:'told',
 think:'thought',
 write:'wrote',
-	}
+	},
+	dig:kopać
+	treasure:skarb
+	sketche:szkic
+	famous:znany
+	hit:uderzać
+	earthquake:trzęsienie ziemi
+	describe:opisywać
+	own:posiadać
+	encurage:przekonywać
+	buid:budować
+	certain:pewien
+	"kin to":lubić coś
+	cottage:dom wiejski
+
+
 };
