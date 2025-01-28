@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<head>
+	<title>Wyszukiwanie binarne</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div id="header" class="jumbotron">
+		  <div>
+			<h1>Wyszukiwanie binarne</h1>
+		  </div>
+		</div>
+
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Cele zajec</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Przypomnimy sobie wyszukiwanie binarne
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Zaprogramujemy je w scratchu
+				</li>
+			</ul>
+		</div>
+		<section>
+			<div class="col-md-10 offset-md-1">
+				<h5>
+					Użytkownik nie lubi czekać, więc dane muszą być wyszukiwanie szybko. Robi to za pomoca wyszukiwania binarnego.
+				</h5>
+				<p>
+					Na początek zobaczmy jak Ty poradzisz sobie ze znalezieniem ucznia o imieniu <strong class="searchName">Janek</strong>!
+					Tabela niżej to lista imion. Ktora ma 1024 pozycji. Wpisz numer wiersza, który chesz sprawdzić.
+				</p>
+				<div class="row">
+
+					<table class="table table-bordered table-sm col-md-5 text-center">
+						<thead class="table-info">
+							<tr>
+								<td class="col-md-4">
+									Numer
+								</td>
+								<td class="col-md-8">
+									Imie
+								</td>
+								<tr>
+								</thead>
+								<tbody class="numbersList">
+								</tbody>
+							</table>
+							<div class="col-md-4 offset-md-2 col-md-offset-2 d-flex flex-column align-items-center">
+								<div class="input-group mb-2">
+									<input type="number" class="form-control text-center" placeholder="Wprowadź liczbę" aria-label="Wprowadź liczbę">
+								</div>
+								<button class="btn btn-primary" type="button">Sprawdź</button>
+							</div>
+						</div>
+		</div>
+		</section>
+		<section class="sumUp row mt-2 mb-2" hidden>
+			<button class="col-md-3 offset-md-2 btn btn-primary btn-lg againByUser">
+				Jeszcze raz
+			</button>
+			<button class="col-md-3 offset-md-2 btn btn-success btn-lg showByComputer">
+				Zobacz jak robi to komputer
+			</button>
+		</section>
+		<section class="byComputer row mt-2" hidden>
+
+			<h3 class="col-md-12 text-center">A teraz zobaczmy jak z zadaniem poradzi sobie komputer:</h3>
+			<div class="col-md-6">
+				<table class="table table-bordered">
+					<thead class="table-info">
+						<tr>
+							<td class="col-md-4">
+								Numer
+							</td>
+							<td class="col-md-8">
+								Liczba
+							</td>
+						<tr>
+					</thead>
+					<tbody class="numbersList">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<p>
+					Obok znajdują się posortowana lista uczniów innej klasy. Zobaczymy jak komputer znajdzie Jankowskiego w tej klasie. Wciśnij start!
+				</p>
+				<a class="mt-1 col-md-6 offset-md-3 btn btn-success btn-lg startSearch">
+					Start
+				</a>
+				<h3 class="text-center counter" hidden>
+					0
+				</h3>
+				<a class="mt-1 col-md-6 offset-md-3 btn btn-primary btn-lg searchAgainByComputer" hidden>
+					Jeszcze raz
+				</a>
+			</div>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js" integrity="sha256-jCRPoAgIIooCTnLmaSyKMPrFgFh6/T0e8c3i+KkZZ6U=" crossorigin="anonymous"></script>
+	<script src="binary.js"></script>
+</body>
