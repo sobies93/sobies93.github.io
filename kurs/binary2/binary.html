@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<head>
+	<title>Wyszukiwanie binarne</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div id="header" class="jumbotron">
+		  <div>
+			<h1>Wyszukiwanie binarne</h1>
+		  </div>
+		</div>
+
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Cele zajec</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Przypomnimy sobie wyszukiwanie binarne
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Zaprogramujemy je w scratchu
+				</li>
+			</ul>
+		</div>
+		<section>
+			<div class="col-md-10 offset-md-1">
+				<h4>
+					Użytkownik nie lubi czekać, więc dane muszą być wyszukiwanie szybko. Robi to za pomoca wyszukiwania binarnego.
+				</h4>
+				<p>
+					Na początek zobaczmy jak Ty poradzisz sobie ze znalezieniem ucznia o imieniu <strong class="searchName">Janek</strong>!
+					Tabela niżej to lista imion. Ktora ma 1000 pozycji. Wpisz numer wiersza, który chesz sprawdzić.
+				</p>
+				<div class="row">
+
+					<table class="table table-bordered table-sm col-md-5 text-center">
+						<thead class="table-info">
+							<tr>
+								<td class="col-md-4">
+									Numer
+								</td>
+								<td class="col-md-8">
+									Imie
+								</td>
+								<tr>
+								</thead>
+								<tbody class="numbersList">
+								</tbody>
+							</table>
+							<div class="col-md-4 offset-md-2 col-md-offset-2 d-flex flex-column align-items-center">
+								<div class="input-group mb-2">
+									<input type="number" class="form-control text-center" placeholder="Wprowadź liczbę" aria-label="Wprowadź liczbę">
+								</div>
+								<button class="btn btn-primary" type="button">Sprawdź</button>
+							</div>
+						</div>
+		</div>
+		</section>
+		<section>
+			<div class="col-md-10 offset-md-1">
+				<h3>
+					Wyszukiwanie binarne w Schatchu
+				</h3>
+				<p>
+					Jak w każdym języku programowania, w Scratchu możemy zaimplementować (zaprogramować) dowolny algorytm. Zanim do tego przejdziemy
+					przypomnimy sobie (albo poznamy) jak działają zmienne w Scratchu.
+				</p>
+				<h3>
+					Zadanie 1 - Kalkulator
+				</h3>
+				<p>
+					Stwórz kalkulator dodający dwie liczby. Możesz zacząć z nowym projektem albo użyć <a href="./kalkulator.sb3">tego pliku</a>
+					żeby zaczać. Gotowy kalkulator powinien wyglądać <a href="https://scratch.mit.edu/projects/1126510472/" target="_blank">tak</a> 
+				</p>
+				<h3>
+					Zadanie 2 - Odliczanie
+				</h3>
+				<p>
+					Naucz kota liczyć do 10 - napisz program w którym powie po kolei liczny 1,2,3 aż do 10. Możesz zacząć z gotowy projektem albo użyć <a href="./odliczanie.sb3">tego pliku</a>
+					żeby zaczać. Gotowy projekt powinien wyglądać <a href="https://scratch.mit.edu/projects/1126510131/" target="_blank">tak</a> 
+				</p>
+				<h3>
+					Zadanie 3 - Lista uczniów
+				</h3>
+				<p>
+					Nauczmy teraz Scratcha odczytywać pozycje z tabli (prostej bazy danych) - chcemy, żeby wymienił wszystkich uczniów w klasie.
+					Użyj <a href="./lista_uczniow.sb3">startowego pliku</a>. Jeżeli zadanie jest za trudne <a href="./lista_uczniow_prawie_gotowe.sb3">tutaj</a> 
+					jest plik z zaawansowanym rozwiazaniem, wystarczy tylko wykonać jedną zmianę, żeby Scratch poprawnie wymienił uczniów. 
+					<br>
+					Gotowy projekt powinien wyglądać <a href="https://scratch.mit.edu/projects/1126509768/" target="_blank">tak</a> 
+				</p>
+				<h3>
+					Zadanie 4 - Wyszukiwanie binarne
+				</h3>
+				<p>
+					Zaprogramujemy teraz wyszukiwanie binare. Możesz użyć:
+					<ul>
+						<li><a href="./binarne_startowy.sb3">startowego pliku</a></li>
+						<li><a href="./binarne_prawie_gotowe.sb3">zaawansowanego rozwiązania</a></li>
+					</ul>
+					Gotowy projekt powinien wyglądać <a href="https://scratch.mit.edu/projects/1126521920/" target="_blank">tak</a> 
+
+					<br>Najbardziej zaawansowany projekt z przypadkiem, że szukanel liczby nie ma w zbiorze może wyglądać <a href="https://scratch.mit.edu/projects/1126511086/" target="_blank">tak</a> 
+				</p>
+				
+		</div>
+		</section>
+
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js" integrity="sha256-jCRPoAgIIooCTnLmaSyKMPrFgFh6/T0e8c3i+KkZZ6U=" crossorigin="anonymous"></script>
+	<script src="binary.js"></script>
+</body>
