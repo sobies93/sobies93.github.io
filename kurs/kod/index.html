@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+	<title>Wstęp do HTML'a</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div id="header" class="jumbotron">
+		  <div>
+			<h1>Wstęp do HTML'a</h1>
+		  </div>
+		</div>
+
+		<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Cele zajec</h4>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-success">
+					Zaczniemy kodować pisząć w języku JavaScript
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Nauczymy sie kilku znacznikow HTML
+				</li>
+				<li class="list-group-item list-group-item-success">
+					Stworzymy za darmo przestrzń w internecie, gdzie możemy bezpłatnie eksperymentować z technologiami internetowymi
+				</li>
+			</ul>
+		</div>
+		< <div class="col-md-10 offset-md-1 mt-2">
+			<h4>Zadanie 1: Przejście lochu</h4>
+			<p>
+					Wejdź na stronę: <a href="https://codecombat.com/play/dungeon" target="_blank">CodeCombat - Dungeon</a>.<br>
+					Po wejściu na stronę zmień język programowania na JavaScript.
+			</p>
+			<p>
+					Dodatkowe wyzwanie: zamiast używać <code>while(true)</code>, użyj pętli <code>for</code>. Oto przykład:
+			</p>
+			<pre>
+for (let i = 0; i < 10; i++) {
+hero.moveRight();
+hero.moveDown();
+}
+			</pre>
+			<p>Ta petla wykona sie 10 razy. Zamien wartosc 10 na 3 aby wykonac polecenia 3 razy.</p>
+	</div>
+
+	<div class="col-md-10 offset-md-1 mt-2">
+			<h4>Zadanie 2: Kodowanie w HTML</h4>
+			<p>
+					Wejdź na stronę <a href="https://pl.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pc/challenge-write-a-poem" target="_blank">Khan Academy - HTML Challenge</a>.<br>
+					Spróbuj napisać własny wiersz, korzystając z tagów HTML.
+			</p>
+	</div>
+
+	<div class="col-md-10 offset-md-1 mt-2 mb-4">
+			<h4>Zadanie dodatkow: Zakładanie konta na GitHub i publikowanie strony</h4>
+			<p>Krok po kroku:</p>
+			<ol>
+					<li>Wejdź na <a href="https://github.com" target="_blank">GitHub</a> i załóż konto.</li>
+					<li>Po zalogowaniu, kliknij przycisk "„Create repository".</li>
+					<li>Podaj nazwę repozytorium (np. <code>moja-strona</code>) i "Create repository" na dole strony.</li>
+					<li>W nowym repozytorium kliknij start by „creating a new file ”.</li>
+					<li>Utwórz plik <code>index.html</code> i wpisz podstawowy kod HTML:</li>
+					<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Moja Strona&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Witaj na mojej stronie!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</pre>
+					<li>Zapisz plik, klikając „Commit changes”.</li>
+					<li>Przejdź do zakładki „Settings” -> „Pages”.</li>
+					<li>W sekcji „GitHub Pages” wybierz „Deploy from branch”, ustaw gałąź „main” i kliknij „Save”.</li>
+					<li>Po chwili Twoja strona będzie dostępna pod adresem <code>https://twojanazwa.github.io/moja-strona</code>.</li>
+			</ol>
+	</div>
+
+	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/fraktal.js"></script>
+</body>
