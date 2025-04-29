@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escape Room Editor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/editor.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Escape Room Editor</h1>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <form id="mainForm">
+                    <div class="form-group">
+                        <label for="backgroundImage">Background Image</label>
+                        <input type="text" class="form-control" id="backgroundImage" name="backgroundImage">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Image Size</label>
+                        <div class="row">
+                            <div class="col">
+                                <input type="number" class="form-control" id="imageWidth" placeholder="Width">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" id="imageHeight" placeholder="Height">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-mode">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-secondary active" id="dragMode">Drag Mode</button>
+                            <button type="button" class="btn btn-secondary" id="inputMode">Input Mode</button>
+                        </div>
+                    </div>
+
+                    <div id="elementsContainer">
+                        <!-- Elements will be added here -->
+                    </div>
+
+                    <button type="button" class="btn btn-primary" id="addElement">Add New Element</button>
+                    <button type="button" class="btn btn-success btn-save" id="saveJson">Save JSON</button>
+                </form>
+            </div>
+            
+            <div class="col-md-6">
+                <h3>Preview</h3>
+                <div class="preview-container">
+                    <div class="preview-image-container">
+                        <img id="previewImage" src="" alt="Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

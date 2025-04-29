@@ -1,0 +1,100 @@
+{
+  "backgroundImage": "background.jpg",
+  "imageSize": {
+    "width": 700,
+    "height": 700
+  },
+  "interactiveElements": [
+    {
+      "id": "door",
+      "title": "Door",
+      "position": {
+        "top": 250,
+        "left": 320,
+        "width": 100,
+        "height": 180
+      },
+      "question": "To open the door solve 5 puzzles to get a secret code",
+      "answer": "13452",
+      "successMessage": "Your code is correct, the door is opening ...",
+      "failureMessage": "The code is incorrect.",
+      "isFinalPuzzle": true,
+      "successRedirect": "tresure.html"
+    },
+    {
+      "id": "statue",
+      "title": "Statue",
+      "position": {
+        "top": 300,
+        "left": 465,
+        "width": 60,
+        "height": 120
+      },
+      "question": "You find the secret compartment behind the statue. To open, say what is the atomic number of iron",
+      "answer": "26",
+      "successMessage": "Your answer is correct. The third number in code is 4. Your code looks like this <br/>_ _ 4 _ _",
+      "failureMessage": "The answer is incorrect.",
+      "isFinalPuzzle": false
+    },
+    {
+      "id": "drawer",
+      "title": "Drawer",
+      "position": {
+        "top": 410,
+        "left": 75,
+        "width": 100,
+        "height": 110
+      },
+      "question": "You find a locked drawer. To open, enter the result of 22 raised to the power of 22 ( 22²² )",
+      "answer": "341427877364219557396646723584",
+      "successMessage": "Your answer is correct. The second number in code is 3. Your code looks like this <br/>_ 3 _ _ _",
+      "failureMessage": "The answer is incorrect.",
+      "isFinalPuzzle": false
+    },
+    {
+      "id": "pot",
+      "title": "Pot",
+      "position": {
+        "top": 505,
+        "left": 10,
+        "width": 70,
+        "height": 85
+      },
+      "question": "You find a pot with a locked lid. To open, enter the root for equation x²- 4x + 4",
+      "answer": "2",
+      "successMessage": "Your answer is correct. The first number in code is 1. Your code looks like this <br/>1 _ _ _ _",
+      "failureMessage": "The answer is incorrect.",
+      "isFinalPuzzle": false
+    },
+    {
+      "id": "board",
+      "title": "Board",
+      "position": {
+        "top": 490,
+        "left": 240,
+        "width": 245,
+        "height": 160
+      },
+      "question": "You find a board with a hidden message. To reveal, enter the area of Nepal in square kilometers",
+      "answer": "147516",
+      "successMessage": "Your answer is correct. The fourth number in code is 5. Your code looks like this <br/>_ _ _ 5 _",
+      "failureMessage": "The answer is incorrect.",
+      "isFinalPuzzle": false
+    },
+    {
+      "id": "picture",
+      "title": "Picture",
+      "position": {
+        "top": 255,
+        "left": 640,
+        "width": 50,
+        "height": 80
+      },
+      "question": "You find a picture with a hidden code. To reveal, enter the number of districts in Nepal",
+      "answer": "77",
+      "successMessage": "Your answer is correct. The third number in code is 3. Your code looks like this <br/>_ _ _ _ 2",
+      "failureMessage": "The answer is incorrect.",
+      "isFinalPuzzle": false
+    }
+  ]
+} 

@@ -1,0 +1,48 @@
+/* styles.css */
+
+body {
+    margin: 80px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    color: #dc3545;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+p:first-letter {
+    text-transform: uppercase;
+}
+
+body > p:nth-last-child(2) {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

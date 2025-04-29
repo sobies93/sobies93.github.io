@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <head>
 	<title>Escape room</title>
 	<meta charset="UTF-8">
@@ -37,243 +36,102 @@
 </head>
 <body>
 <div class="container">
-  <button type="button" data-toggle="modal" data-target="#doorModal" class="square" style="top: 250px; left: 320px; width:100px; height:180px;"></button>
-  <button type="button" data-toggle="modal" data-target="#statueModal" class="square" style="top: 300px; left: 465px; width:60px; height:120px;"></button>
-  <button type="button" data-toggle="modal" data-target="#drawerModal" class="square" style="top: 410px; left: 75px; width:100px; height:110px;"></button>
-  <button type="button" data-toggle="modal" data-target="#potModal" class="square" style="top: 505px; left: 10px; width:70px; height:85px;"></button>
-  <button type="button" data-toggle="modal" data-target="#boardModal" class="square" style="top: 490px; left: 240px; width:245px; height:160px;"></button>
-  <button type="button" data-toggle="modal" data-target="#pictureModal" class="square" style="top: 255px; left: 640px; width:50px; height:80px;"></button>
-  <img src="./background.jpg" alt="Your Image" width="700" height="700">
+  <img id="backgroundImage" src="" alt="Escape Room Background" width="700" height="700">
+  <!-- Interactive elements will be dynamically inserted here -->
 </div>
   
-  <!-- Modal -->
-  <div class="modal fade" id="doorModal" tabindex="-1" role="dialog" aria-labelledby="doorModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="doorModalLabel">Door</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="doorInputText1">To open the door solve 5 puzzles to get a secret code</label>
-            <input type="email" class="form-control" id="doorInputText1" aria-describedby="emailHelp">
-            <div class="valid-feedback">
-                Your code is correct, the door is opening ...
-            </div>
-            <div class="invalid-feedback">
-                The code is incorrect.
-            </div>
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" id="tryToOpenDoorBtn" class="btn btn-primary ">Try to open</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="statueModal" tabindex="-1" role="dialog" aria-labelledby="statueModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="statueModalLabel">Statue</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="statueInputText1">You find the secret compartment behind the statue. To open, say what is the atomic number of iron </label>
-            <input type="text" data-answer="26" class="form-control" id="statueInputText1" aria-describedby="emailHelp">
-            <div class="valid-feedback">
-                Your answer is correct. The third number in code is 4. Your code looks like this <br/>_ _ 4 _ _
-            </div>
-            <div class="invalid-feedback">
-                The answer is incorrect.
-            </div>
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="tryToOpenBtn btn btn-primary ">Try to open</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for Drawer -->
-<div class="modal fade" id="drawerModal" tabindex="-1" role="dialog" aria-labelledby="drawerModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="drawerModalLabel">Drawer</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="drawerInputText">You find a locked drawer. To open, nter the result of 22 raised to the power of 22 ( 22²² )</label>
-                    <input type="text" data-answer="341427877364219557396646723584" class="form-control" id="drawerInputText" aria-describedby="drawerHelp">
-                    <div class="valid-feedback">
-                        Your answer is correct. The second number in code is 3. Your code looks like this <br/>_ 3 _ _ _
-                    </div>
-                    <div class="invalid-feedback">
-                        The answer is incorrect.
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="tryToOpenBtn btn btn-primary">Try to open</button>
-            </div>
-        </div>
-    </div>
+<!-- Modal container -->
+<div id="modalContainer">
+  <!-- Modals will be dynamically inserted here -->
 </div>
-
-<!-- Modal for Pot -->
-<div class="modal fade" id="potModal" tabindex="-1" role="dialog" aria-labelledby="potModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="potModalLabel">Pot</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="potInputText">You find a pot with a locked lid. To open, enter the root for equation x²- 4x + 4</label>
-                    <input type="text" data-answer="2" class="form-control" id="potInputText" aria-describedby="potHelp">
-                    <div class="valid-feedback">
-                        Your answer is correct. The first number in code is 1. Your code looks like this <br/>1 _ _ _ _
-                    </div>
-                    <div class="invalid-feedback">
-                        The answer is incorrect.
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="tryToOpenBtn btn btn-primary">Try to open</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal for Board -->
-<div class="modal fade" id="boardModal" tabindex="-1" role="dialog" aria-labelledby="boardModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="boardModalLabel">Board</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="boardInputText">You find a board with a hidden message. To reveal, enter the area of Nepal in square kilometers</label>
-                    <input type="text" data-answer="147516" class="form-control" id="boardInputText" aria-describedby="boardHelp">
-                    <div class="valid-feedback">
-                        Your answer is correct. The fourth number in code is 5. Your code looks like this <br/>_ _ _ 5 _.
-                    </div>
-                    <div class="invalid-feedback">
-                        The answer is incorrect.
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="tryToOpenBtn btn btn-primary">Try to open</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal for Picture -->
-<div class="modal fade" id="pictureModal" tabindex="-1" role="dialog" aria-labelledby="pictureModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="pictureModalLabel">Picture</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="pictureInputText">You find a picture with a hidden code. To reveal, enter the number of districts in Nepal</label>
-                    <input type="text" data-answer="77" class="form-control" id="pictureInputText" aria-describedby="pictureHelp">
-                    <div class="valid-feedback">
-                        Your answer is correct. The third number in code is 3. Your code looks like this <br/>_ _ _ _ 2
-                    </div>
-                    <div class="invalid-feedback">
-                        The answer is incorrect.
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="tryToOpenBtn btn btn-primary">Try to open</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-</body>
 
 <script>
     $(document).ready(function() {
-      $("#tryToOpenDoorBtn").click(function() {
-          var code = $("#doorInputText1").val();
-          if (code === "13452") {
-              // Code is correct, navigate to different page after 4 seconds
-              setTimeout(function() {
-                  window.location.href = "tresure.html"; // Replace 'different-page.html' with the URL of the different page
-              }, 3000);
-              $('.valid-feedback').css("display", "block");
-              $('.invalid-feedback').css("display", "none");
-          } else {
-              // Code is incorrect
-              $('.valid-feedback').css("display", "none");
-              $('.invalid-feedback').css("display", "block");
+      // Load JSON data
+      $.getJSON('data.json', function(data) {
+        // Set background image
+        $('#backgroundImage').attr('src', data.backgroundImage);
+        
+        // Create interactive elements and modals
+        data.interactiveElements.forEach(function(element) {
+          // Create square button
+          const square = $('<button>')
+            .addClass('square')
+            .attr({
+              'type': 'button',
+              'data-toggle': 'modal',
+              'data-target': `#${element.id}Modal`
+            })
+            .css({
+              'top': `${element.position.top}px`,
+              'left': `${element.position.left}px`,
+              'width': `${element.position.width}px`,
+              'height': `${element.position.height}px`
+            });
+          
+          // Create modal
+          const modal = $(`
+            <div class="modal fade" id="${element.id}Modal" tabindex="-1" role="dialog" aria-labelledby="${element.id}ModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="${element.id}ModalLabel">${element.title}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="${element.id}InputText">${element.question}</label>
+                      <input type="text" class="form-control" id="${element.id}InputText" data-answer="${element.answer}">
+                      <div class="valid-feedback">${element.successMessage}</div>
+                      <div class="invalid-feedback">${element.failureMessage}</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="tryToOpenBtn btn btn-primary" data-element-id="${element.id}">Try to open</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `);
+          
+          // Append elements to their containers
+          $('.container').append(square);
+          $('#modalContainer').append(modal);
+        });
+
+        // Handle button clicks
+        $('.tryToOpenBtn').click(function() {
+          if($(this).hasClass('disabled')) {
+            return;
           }
+
+          const elementId = $(this).data('element-id');
+          const element = data.interactiveElements.find(e => e.id === elementId);
+          const modal = $(`#${elementId}Modal`);
+          const input = modal.find('input');
+          const validFeedback = modal.find('.valid-feedback');
+          const invalidFeedback = modal.find('.invalid-feedback');
+
+          if (input.val() === element.answer) {
+            validFeedback.css('display', 'block');
+            invalidFeedback.css('display', 'none');
+            $(this).addClass('disabled');
+
+            if (element.isFinalPuzzle) {
+              setTimeout(function() {
+                window.location.href = element.successRedirect;
+              }, 3000);
+            }
+          } else {
+            validFeedback.css('display', 'none');
+            invalidFeedback.css('display', 'block');
+          }
+        });
       });
-
-      $(".tryToOpenBtn").click(function() {
-        if($(this).hasClass("disabled")) {
-          return;
-        }
-
-        var modal = $(this).closest('.modal');
-    
-    // Find the input field within the modal
-    var code = modal.find("input").val();
-    var answer = modal.find("input").data("answer").toString();
-
-    // Find the feedback containers within the modal
-    var validFeedback = modal.find('.valid-feedback');
-    var invalidFeedback = modal.find('.invalid-feedback');
-
-    if (code === answer) {
-        validFeedback.css("display", "block");
-        invalidFeedback.css("display", "none");
-        $(this).addClass("disabled")
-    } else {
-        // Code is incorrect
-        validFeedback.css("display", "none");
-        invalidFeedback.css("display", "block");
-    }
-      });
-  });
+    });
 </script>
-    </script>
+</body>
 </html>
