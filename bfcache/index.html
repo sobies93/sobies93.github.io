@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const vParam = urlParams.get('v');
+    console.log(`🚀 Script tag executed. v param: ${vParam}`);
+  </script>
+</head>
+<body>
+    <a id="link1" href="./index.html?v=1">Reload index.html (with v=1)</a>
+    <a id="link2" href="./index.html?v=2">Reload index.html (with v=2)</a>
+</body>
+</html>
