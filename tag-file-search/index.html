@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Exercise PDFs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <style>
+    :root { --accent: #2f6feb; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+    .controls { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
+    #tags { display:flex; flex-wrap:wrap; gap:.5rem; }
+    .tag { padding:.35rem .6rem; border:1px solid var(--accent); background:#fff; color:var(--accent); border-radius:999px; cursor:pointer; }
+    .tag.selected { background:var(--accent); color:#fff; }
+    .badge { font-size:.75rem; padding:.15rem .4rem; border-radius:.4rem; background:#eef; color:#223; }
+    .list { list-style:none; padding-left:0; margin:0; display:grid; gap:.75rem; }
+    .item { padding:.75rem; border:1px solid #e5e7eb; border-radius:.6rem; }
+    .item a { font-weight:600; }
+    .tags-inline { display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.35rem; }
+    small.muted { color:#6b7280; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>English Exercise PDFs</h1>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search by name or tag..." autofocus />
+      <button id="clear" type="button">Clear</button>
+    </div>
+
+    <section>
+      <h3>Tags</h3>
+      <div id="tags"></div>
+    </section>
+
+    <section>
+      <h3>Files <small class="muted" id="count"></small></h3>
+      <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <script>
+    // lista plików z tagami
+    const data = [
+      { title:'Present Simple Practice', file:'examples/01-present-simple-practice.pdf', tags:['grammar','tenses','present','A1','beginner'] },
+      { title:'Present Continuous Worksheet', file:'examples/02-present-continuous-worksheet.pdf', tags:['grammar','tenses','present','A2','beginner'] },
+      { title:'Past Simple Drills', file:'examples/03-past-simple-drills.pdf', tags:['grammar','tenses','past','A1','beginner'] },
+      { title:'Past Continuous Exercises', file:'examples/04-past-continuous-exercises.pdf', tags:['grammar','tenses','past','A2','beginner'] },
+      { title:'Present Perfect Practice', file:'examples/05-present-perfect-practice.pdf', tags:['grammar','tenses','present','B1','intermediate'] },
+      { title:'Present Perfect Continuous', file:'examples/06-present-perfect-continuous.pdf', tags:['grammar','tenses','present','B2','intermediate'] },
+      { title:'Future Tenses Review', file:'examples/07-future-tenses-review.pdf', tags:['grammar','tenses','future','B1','intermediate'] },
+      { title:'Conditionals Basics', file:'examples/08-conditionals-basics.pdf', tags:['grammar','conditionals','B1','intermediate'] },
+      { title:'Conditionals Advanced', file:'examples/09-conditionals-advanced.pdf', tags:['grammar','conditionals','B2','advanced'] },
+      { title:'Modal Verbs Practice', file:'examples/10-modal-verbs-practice.pdf', tags:['grammar','modals','B1','intermediate'] },
+      { title:'Articles A An The', file:'examples/11-articles-a-an-the.pdf', tags:['grammar','articles','A2','beginner'] },
+      { title:'Prepositions of Time', file:'examples/12-prepositions-of-time.pdf', tags:['grammar','prepositions','A2','beginner'] },
+      { title:'Prepositions of Place', file:'examples/13-prepositions-of-place.pdf', tags:['grammar','prepositions','A1','beginner'] },
+      { title:'Phrasal Verbs Starter', file:'examples/14-phrasal-verbs-starter.pdf', tags:['vocabulary','phrasal-verbs','B1','intermediate'] },
+      { title:'Irregular Verbs List Quiz', file:'examples/15-irregular-verbs-list-quiz.pdf', tags:['vocabulary','irregular-verbs','A2','beginner'] },
+      { title:'Comparative and Superlative Adjectives', file:'examples/16-comparative-and-superlative-adjectives.pdf', tags:['grammar','adjectives','B1','intermediate'] },
+      { title:'Reported Speech Practice', file:'examples/17-reported-speech-practice.pdf', tags:['grammar','reported-speech','B2','advanced'] },
+      { title:'Questions and Short Answers', file:'examples/18-questions-and-short-answers.pdf', tags:['grammar','questions','A1','beginner'] },
+      { title:'Reading Comprehension A2', file:'examples/19-reading-comprehension-a2.pdf', tags:['reading','A2','beginner'] },
+      { title:'Writing Task Opinion Essay', file:'examples/20-writing-task-opinion-essay.pdf', tags:['writing','B1','intermediate'] }
+    ];
+
+    const allTags = [...new Set(data.flatMap(d => d.tags))].sort((a,b)=>a.localeCompare(b));
+    const selected = new Set();
+
+    const searchInput = document.getElementById('search');
+    const tagsEl = document.getElementById('tags');
+    const listEl = document.getElementById('list');
+    const countEl = document.getElementById('count');
+
+    function renderTags() {
+      tagsEl.innerHTML = '';
+      allTags.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.className = 'tag' + (selected.has(tag) ? ' selected' : '');
+        btn.textContent = tag;
+        btn.type = 'button';
+        btn.onclick = () => {
+          if (selected.has(tag)) selected.delete(tag); else selected.add(tag);
+          renderTags();
+          renderList();
+        };
+        tagsEl.appendChild(btn);
+      });
+    }
+
+    function matches(item, q, selectedTags) {
+      const qok = !q || item.title.toLowerCase().includes(q) || item.tags.some(t => t.toLowerCase().includes(q));
+      const tagok = [...selectedTags].every(t => item.tags.includes(t));
+      return qok && tagok;
+    }
+
+    function renderList() {
+      const q = searchInput.value.trim().toLowerCase();
+      const items = data.filter(d => matches(d, q, selected));
+      countEl.textContent = `(${items.length}/${data.length})`;
+      listEl.innerHTML = items.map(d => `
+        <li class="item">
+          <a href="${d.file}" download>${d.title}</a>
+          <div class="tags-inline">
+            ${d.tags.map(t => `<span class="badge">${t}</span>`).join('')}
+          </div>
+        </li>`).join('');
+    }
+
+    document.getElementById('clear').onclick = () => {
+      searchInput.value = '';
+      selected.clear();
+      renderTags();
+      renderList();
+    };
+
+    searchInput.addEventListener('input', renderList);
+
+    renderTags();
+    renderList();
+  </script>
+</body>
+</html>
